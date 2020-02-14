@@ -60,8 +60,8 @@ if ($category_id == null || $category_id == false ||
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':code', $code);
-    $statement->bindValue(':name', $name);
-    $statement->bindValue(':price', $price);
+    $statement->bindValue(':team', $team);
+    $statement->bindValue(':player', $player);
     $statement->bindValue(':image', $image);
     $statement->execute();
     $statement->closeCursor();

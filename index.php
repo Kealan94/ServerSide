@@ -34,6 +34,7 @@ $statement3->bindValue(':category_id', $category_id);
 $statement3->execute();
 $records = $statement3->fetchAll();
 $statement3->closeCursor();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,7 +50,7 @@ $statement3->closeCursor();
 <h1>Football</h1>
 <aside>
 <!-- display a list of categories in the sidebar-->
-<h2>Categories</h2>
+<h2>Leagues</h2>
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
@@ -98,7 +99,7 @@ value="<?php echo $record['categoryID']; ?>">
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add Record</a></p>
+<p><a href="add_record_form.php">Add a team</a></p>
 <p><a href="category_list.php">Edit Categories</a></p>
 </section>
 </main>
