@@ -43,14 +43,14 @@ $image = $original_image; // old image from database
 require_once('database.php');
 $query = 'UPDATE records
 SET categoryID = :category_id,
-code = :code,
+manager = :manager,
 name = :name,
 price = :price,
 image = :image
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
-$statement->bindValue(':code', $code);
+$statement->bindValue(':manager', $manager);
 $statement->bindValue(':name', $name);
 $statement->bindValue(':price', $price);
 $statement->bindValue(':image', $image);

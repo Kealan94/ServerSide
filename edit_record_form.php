@@ -15,7 +15,7 @@ $statement->closeCursor();
 <!-- the head section -->
 <head>
     <title>PHP CRUD</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
 <body>
@@ -27,13 +27,14 @@ $statement->closeCursor();
             <input type="hidden" name="original_image" value="<?php echo $record['image']; ?>" />
             <input type="hidden" name="record_id"
                    value="<?php echo $record['recordID']; ?>">
+                   <br>
             <label>Category ID:</label>
             <input type="category_id" name="category_id"
                    value="<?php echo $record['categoryID']; ?>">
-            <br>
-            <label>Code:</label>
-            <input type="input" name="code"
-                   value="<?php echo $record['code']; ?>">
+                   <br>
+            <label>Manager:</label>
+            <input type="manager" name="manager"
+                   value="<?php echo $record['manager']; ?>">
             <br>
             <label>Name:</label>
             <input type="input" name="name"
