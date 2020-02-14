@@ -16,6 +16,6 @@
     </main>
     <footer>
         <p>&copy; <?php echo date("Y"); ?> My PHP CRUD application, Inc.</p>     
-    </footer>
+    </footer> <?php './includes/footer.php';?>
 </body>
 </html>

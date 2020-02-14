@@ -45,7 +45,7 @@ $statement3->closeCursor();
 </head>
 <!-- the body section -->
 <body>
-<header><h1>PHP CRUD</h1></header>
+ <?php './includes/header.php';?>
 <main>
 <h1>Football</h1>
 <aside>
@@ -104,7 +104,7 @@ value="<?php echo $record['categoryID']; ?>">
 </section>
 </main>
 <footer>
-<p>&copy; <?php echo date("Y"); ?> PHP CRUD, Inc.</p>
-</footer> <?php include './includes/footer.php';?>
+<p>&copy; <?php echo date("Y"); ?> Football Copyright.</p>
+</footer> <?php './includes/footer.php';?>
 </body>
 </html>
