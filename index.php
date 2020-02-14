@@ -68,8 +68,8 @@ $statement3->closeCursor();
 <table>
 <tr>
 <th>Image</th>
-<th>Name</th>
-<th>Code</th>
+<th>Team</th>
+<th>Country</th>
 <th>Price</th>
 <th>Delete</th>
 <th>Edit</th>

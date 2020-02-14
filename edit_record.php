@@ -24,8 +24,7 @@ $valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
 $image = rand(1000, 1000000) . "." . $imgExt;
 if (in_array($imgExt, $valid_extensions)) {
 if ($imgSize < 5000000) {
-if (filter_input(INPUT_POST, 'original_image') !== "") {
-unlink($upload_dir . $original_image);                    
+if (filter_input(INPUT_POST, 'original_image') !== "") {               
 }
 move_uploaded_file($tmp_dir, $upload_dir . $image);
 } else {
