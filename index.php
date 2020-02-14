@@ -46,7 +46,7 @@ $statement3->closeCursor();
 <body>
 <header><h1>PHP CRUD</h1></header>
 <main>
-<h1>Record List</h1>
+<h1>Football</h1>
 <aside>
 <!-- display a list of categories in the sidebar-->
 <h2>Categories</h2>
