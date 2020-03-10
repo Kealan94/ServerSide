@@ -40,9 +40,9 @@ $statement->closeCursor();
             <input type="input" name="name"
                    value="<?php echo $record['name']; ?>">
             <br>
-            <label>Price:</label>
-            <input type="input" name="price"
-                   value="<?php echo $record['price']; ?>">
+            <label>Year Founded:</label>
+            <input type="input" name="year founded
+                   value="<?php echo $record['year founded']; ?>">
             <br>
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />

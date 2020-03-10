@@ -41,8 +41,8 @@ $statement->closeCursor();
             <input type="input" name="name">
             <br>
 
-            <label>Price:</label>
-            <input type="input" name="price">
+            <label>Year Founded:</label>
+            <input type="input" name="year founded">
             <br>
 
             <label>Image:</label>
