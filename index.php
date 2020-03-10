@@ -70,7 +70,7 @@ $statement3->closeCursor();
 <th>Image</th>
 <th>Team</th>
 <th>Country</th>
-<th>Price</th>
+<th>Stadium</th>
 <th>Delete</th>
 <th>Edit</th>
 </tr>
@@ -79,7 +79,7 @@ $statement3->closeCursor();
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['code']; ?></td>
-<td><?php echo $record['price']; ?></td>
+<td><?php echo $record['stadium']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
 <input type="hidden" name="record_id"
