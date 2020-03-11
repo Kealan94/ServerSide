@@ -3,7 +3,7 @@
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $country = filter_input(INPUT_POST, 'country');
 $name = filter_input(INPUT_POST, 'name');
-$yearfounded = filter_input(INPUT_POST, 'year founded');
+$year founded = filter_input(INPUT_POST, 'year founded');
 $image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_FLOAT);
 
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
@@ -11,7 +11,7 @@ $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
 if ($category_id == null || $category_id == false ||
         $country== null || $country == false || 
         $name == null   || $name == false 
-        $yearfounded== null || $yearfounded == false       
+        $year founded == null || $year founded == false       
         || $image == null || $image == false) {
     $error = "Invalid data. Check all fields and try again.";
     include('error.php');
@@ -60,7 +60,7 @@ if ($category_id == null || $category_id == false ||
     require_once('database.php');
     // Add the records to the database 
     $query = "INSERT INTO records
-                 (categoryID, manager, name, price, image)
+                 (categoryID, country, name, year founded, image)
               VALUES
                  (:category_id, :manager, :name, :price, :image)";
     $statement = $db->prepare($query);
