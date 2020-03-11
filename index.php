@@ -77,8 +77,8 @@ $statement3->closeCursor();
 <?php foreach ($records as $record) : ?>
 <tr>
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
-<td><?php echo $record['name']; ?></td>
-<td><?php echo $record['code']; ?></td>
+<td><?php echo $record['team']; ?></td>
+<td><?php echo $record['country']; ?></td>
 <td><?php echo $record['stadium']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
