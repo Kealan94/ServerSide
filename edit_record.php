@@ -4,7 +4,7 @@ $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $code = filter_input(INPUT_POST, 'code');
 $name = filter_input(INPUT_POST, 'name');
-$price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+$price = filter_input(INPUT_POST, 'year founded', FILTER_VALIDATE_FLOAT);
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
 $category_id == FALSE || empty($code) || empty($name) ||
@@ -45,14 +45,14 @@ $query = 'UPDATE records
 SET categoryID = :category_id,
 manager = :manager,
 name = :name,
-price = :price,
+year founded = :year founded,
 image = :image
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':manager', $manager);
 $statement->bindValue(':name', $name);
-$statement->bindValue(':price', $price);
+$statement->bindValue(':year founded', $year founded);
 $statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();

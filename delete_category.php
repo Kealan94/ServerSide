@@ -1,6 +1,5 @@
 <?php
 // Get ID
-<link rel="stylesheet" type="text/css" href="./sass/main.css">
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 // Validate inputs
 if ($category_id == null || $category_id == false) {
