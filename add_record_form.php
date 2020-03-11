@@ -20,7 +20,7 @@ $statement->closeCursor();
     <header><h1>Add a record</h1></header>
 
     <main>
-        <h1>Add Record</h1>
+        <h1>Add a Record</h1>
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
             <label>Category:</label>
@@ -34,7 +34,7 @@ $statement->closeCursor();
             <br>
 
             <label>Country:</label>
-            <input type="input" name="code">
+            <input type="input" name="country">
             <br>
 
             <label>Name:</label>

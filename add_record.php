@@ -3,7 +3,7 @@
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $country = filter_input(INPUT_POST, 'country');
 $name = filter_input(INPUT_POST, 'name');
-$year founded = filter_input(INPUT_POST, 'year founded');
+$year founded = filter_input(INPUT_POST, 'Year Founded');
 $image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_FLOAT);
 
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
