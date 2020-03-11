@@ -1,12 +1,18 @@
 <?php
 // Get the data
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
-$manager = filter_input(INPUT_POST, 'manager');
+$country = filter_input(INPUT_POST, 'country');
 $name = filter_input(INPUT_POST, 'name');
+$yearfounded = filter_input(INPUT_POST, 'year founded');
+$image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_FLOAT);
+
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-        $code == null || $name == null || $price == null || $price == false) {
+        $country== null || $country == false 
+        $name == null || $name == false 
+        $yearfounded== null || $yearfounded == false       
+        || $image == null || $image == false) {
     $error = "Invalid data. Check all fields and try again.";
     include('error.php');
     exit();
