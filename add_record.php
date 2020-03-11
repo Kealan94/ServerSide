@@ -9,8 +9,8 @@ $image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_FLOAT);
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-        $country== null || $country == false 
-        $name == null || $name == false 
+        $country== null || $country == false || 
+        $name == null   || $name == false 
         $yearfounded== null || $yearfounded == false       
         || $image == null || $image == false) {
     $error = "Invalid data. Check all fields and try again.";

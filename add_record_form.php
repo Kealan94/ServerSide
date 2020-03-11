@@ -12,12 +12,12 @@ $statement->closeCursor();
 <html>
 <!-- the head section -->
 <head>
-    <title>PHP CRUD</title>
+    <title>Add Records Page</title>
     <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
 <body>
-    <header><h1>PHP CRUD</h1></header>
+    <header><h1>Add a record</h1></header>
 
     <main>
         <h1>Add Record</h1>
