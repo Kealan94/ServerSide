@@ -14,10 +14,11 @@
 <head>
     <title>PHP CRUD</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
 <body>
-    <header><h1>PHP CRUD</h1></header>
+    <header><h1>Add a Category</h1></header>
     <main>
     <h1>Categories</h1>
     <table>
