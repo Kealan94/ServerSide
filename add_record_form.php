@@ -41,7 +41,7 @@ $statement->closeCursor();
             <input type="input" name="name">
             <br>
 
-            <label>stadium:</label>
+            <label>Stadium:</label>
             <input type="input" name="stadium">
             <br>
 
@@ -55,7 +55,7 @@ $statement->closeCursor();
         <p><a href="index.php">Homepage</a></p>
     </main>
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> PHP CRUD, Inc.</p>
+        <p>&copy; <?php echo date("Y"); ?>Football.</p>
     </footer>
 </body>
 </html>
