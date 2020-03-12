@@ -34,7 +34,7 @@ $statement->closeCursor();
             <br>
 
             <label>Country:</label>
-            <input type="input" name="country">
+            <input type="input" name="country" required>
             <br>
 
             <label>Team:</label>
@@ -42,7 +42,7 @@ $statement->closeCursor();
             <br>
 
             <label>Stadium:</label>
-            <input type="input" name="stadium">
+            <input type="input" name="stadium" required>
             <br>
 
             <label>Image:</label>
