@@ -8,9 +8,9 @@ $stadium = filter_input(INPUT_POST, 'stadium');
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
 $category_id == FALSE || empty($code) || empty($name) ||
-$country == NULL || $country == FALSE
-$team == NULL   ||   $team == FALSE 
-|| $stadium == NULL || $stadium == FALSE
+$country == NULL || $country == FALSE 
+|| $stadium == NULL || $stadium == FALSE ||
+$team == NULL || $team == FALSE ||
 $image == NULL || $image == FALSE) {
 $error = "Invalid data. Check all fields and try again.";
 include('error.php');
