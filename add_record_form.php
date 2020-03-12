@@ -12,15 +12,15 @@ $statement->closeCursor();
 <html>
 <!-- the head section -->
 <head>
-    <title>Add Records Page</title>
+    <title>Add a team</title>
     <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
 <body>
-    <header><h1>Add a League</h1></header>
+    <header><h1>Add a Team</h1></header>
 
     <main>
-        <h1>Add a League</h1>
+        <h1>Input your own team</h1>
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
             <label>Category:</label>
@@ -37,8 +37,8 @@ $statement->closeCursor();
             <input type="input" name="country">
             <br>
 
-            <label>Name:</label>
-            <input type="input" name="name">
+            <label>Team:</label>
+            <input type="input" name="team" required>
             <br>
 
             <label>Stadium:</label>

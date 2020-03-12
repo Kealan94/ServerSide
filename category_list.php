@@ -12,7 +12,7 @@
 <html>
 <!-- the head section -->
 <head>
-    <title>PHP CRUD</title>
+    <title>Edit a Record</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>

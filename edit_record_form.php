@@ -14,12 +14,12 @@ $statement->closeCursor();
 <html>
 <!-- the head section -->
 <head>
-    <title>PHP CRUD</title>
+    <title>Edit a Record</title>
     <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
 <body>
-    <header><h1>PHP CRUD</h1></header>
+    <header><h1>Edit a Record</h1></header>
     <main>
         <h1>Edit record</h1>
         <form action="edit_record.php" method="post" enctype="multipart/form-data"
@@ -32,17 +32,17 @@ $statement->closeCursor();
             <input type="category_id" name="category_id"
                    value="<?php echo $record['categoryID']; ?>">
                    <br>
-            <label>Manager:</label>
-            <input type="manager" name="manager"
-                   value="<?php echo $record['manager']; ?>">
+            <label>Country:</label>
+            <input type="country" name="country"
+                   value="<?php echo $record['country']; ?>">
             <br>
-            <label>Name:</label>
-            <input type="input" name="name"
-                   value="<?php echo $record['name']; ?>">
+            <label>Team:</label>
+            <input type="input" name="team"
+                   value="<?php echo $record['team']; ?>">
             <br>
-            <label>Year Founded:</label>
-            <input type="input" name="year founded
-                   value="<?php echo $record['year founded']; ?>">
+            <label>Stadium:</label>
+            <input type="input" name="stadium
+            value="<?php echo $record['stadium']; ?>>
             <br>
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />

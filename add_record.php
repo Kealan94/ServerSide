@@ -2,13 +2,13 @@
 // Get the data
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $country = filter_input(INPUT_POST, 'country');
-$name = filter_input(INPUT_POST, 'name');
+$team = filter_input(INPUT_POST, 'team');
 $stadium = filter_input(INPUT_POST, 'stadium');
 $image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_FLOAT);
 // Validate inputs
 if ($category_id == null || $category_id == false ||
         $country== null || $country == false || 
-        $name == null   || $name == false ||
+        $team == null   || $team == false ||
         $stadium == null || $stadium == false       
         || $image == null || $image == false) {
     $error = "Invalid data. Check all fields and try again.";
@@ -58,13 +58,13 @@ if ($category_id == null || $category_id == false ||
     require_once('database.php');
     // Add the records to the database 
     $query = "INSERT INTO records
-                 (categoryID, country, name, stadium, image)
+                 (categoryID, country, team, stadium, image)
               VALUES
-                 (:category_id, :country, :name, :stadium, :image)";
+                 (:category_id, :country, :team, :stadium, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':country', $country);
-    $statement->bindValue(':name', $name);
+    $statement->bindValue(':team', $team);
     $statement->bindValue(':stadium', $stadium);
     $statement->bindValue(':image', $image);
     $statement->execute();

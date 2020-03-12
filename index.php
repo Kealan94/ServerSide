@@ -40,7 +40,7 @@ $statement3->closeCursor();
 <html>
 <!-- the head section -->
 <head>
-<title>PHP CRUD</title>
+<title>Football</title>
 <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
