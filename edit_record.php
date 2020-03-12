@@ -2,9 +2,9 @@
 // Get the data
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
-$code = filter_input(INPUT_POST, 'code');
+$country = filter_input(INPUT_POST, 'country');
 $name = filter_input(INPUT_POST, 'name');
-$price = filter_input(INPUT_POST, 'year founded', FILTER_VALIDATE_FLOAT);
+$stadium = filter_input(INPUT_POST, 'stadium', FILTER_VALIDATE_FLOAT);
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
 $category_id == FALSE || empty($code) || empty($name) ||
@@ -43,16 +43,16 @@ $image = $original_image; // old image from database
 require_once('database.php');
 $query = 'UPDATE records
 SET categoryID = :category_id,
-manager = :manager,
+country = :country,
 name = :name,
-year founded = :year founded,
+stadium = :stadium,
 image = :image
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':manager', $manager);
 $statement->bindValue(':name', $name);
-$statement->bindValue(':year founded', $year founded);
+$statement->bindValue(':stadium, $stadium);
 $statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();

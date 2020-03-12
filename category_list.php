@@ -18,7 +18,7 @@
 </head>
 <!-- the body section -->
 <body>
-    <header><h1>Add a Category</h1></header>
+    <header><h1>Add a League or Team</h1></header>
     <main>
     <h1>Categories</h1>
     <table>
