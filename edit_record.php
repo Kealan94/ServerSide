@@ -4,13 +4,13 @@ $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $country = filter_input(INPUT_POST, 'country');
 $team = filter_input(INPUT_POST, 'team');
-$stadium = filter_input(INPUT_POST, 'stadium', FILTER_VALIDATE_FLOAT);
+$stadium = filter_input(INPUT_POST, 'stadium');
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
 $category_id == FALSE || empty($code) || empty($name) ||
 $country == NULL || $country == FALSE
-$team == NULL || $team == FALSE ||
-$stadium == NULL || $stadium == FALSE
+$team == NULL   ||   $team == FALSE 
+|| $stadium == NULL || $stadium == FALSE
 $image == NULL || $image == FALSE) {
 $error = "Invalid data. Check all fields and try again.";
 include('error.php');
@@ -64,3 +64,10 @@ $statement->closeCursor();
 include('index.php');
 }
 ?>
+    <p><a href="index.php">Homepage</a></p>
+    </main>
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?>Football.</p>
+    </footer>
+</body>
+</html>

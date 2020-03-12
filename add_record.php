@@ -4,13 +4,11 @@ $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $country = filter_input(INPUT_POST, 'country');
 $team = filter_input(INPUT_POST, 'team');
 $stadium = filter_input(INPUT_POST, 'stadium');
-$image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_FLOAT);
 // Validate inputs
 if ($category_id == null || $category_id == false ||
         $country== null || $country == false || 
         $team == null   || $team == false ||
-        $stadium == null || $stadium == false       
-        || $image == null || $image == false) {
+        $stadium == null || $stadium == false) {
     $error = "Invalid data. Check all fields and try again.";
     include('error.php');
     exit();

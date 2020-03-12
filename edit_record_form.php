@@ -54,9 +54,11 @@ $statement->closeCursor();
             <input type="submit" value="Save Changes">
             <br>
         </form>
+        <p><a href="index.php">Homepage</a></p>
     </main>
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> PHP CRUD, Inc.</p>
+        <p>&copy; <?php echo date("Y"); ?>Football.</p>
     </footer>
 </body>
 </html>
+  
