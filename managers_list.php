@@ -13,7 +13,6 @@
 <!-- the head section -->
 <head>
     <title>Edit a Record</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
@@ -22,7 +21,6 @@
     <main>
     <h1>Managers</h1>
     <table>
-        <tr>
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>

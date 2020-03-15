@@ -63,7 +63,6 @@ include('index.php');
 ?>
     <p><a href="index.php">Homepage</a></p>
     </main>
-    <footer>
         <p>&copy; <?php echo date("Y"); ?>Football.</p>
     </footer>
 </body>
