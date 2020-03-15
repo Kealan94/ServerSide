@@ -57,7 +57,6 @@ $statement->bindValue(':country', $country);
 $statement->bindValue(':team', $team);
 $statement->bindValue(':stadium', $stadium);
 $statement->bindValue(':image', $image);
-$statement->bindValue(':record_id', $record_id);
 $statement->execute();
 $statement->closeCursor();
 // Display the index page
