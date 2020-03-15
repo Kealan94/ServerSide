@@ -20,7 +20,7 @@
 <body>
     <header><h1>Add a League or Team</h1></header>
     <main>
-    <h1>Categories</h1>
+    <h1>Leagues</h1>
     <table>
         <tr>
             <th>Name</th>
@@ -42,7 +42,7 @@
         <?php endforeach; ?>
     </table>
     <br>
-    <h2>Add Category</h2>
+    <h2>Add a league here</h2>
     <form action="add_category.php" method="post"
           id="add_category_form">
         <label>Name:</label>
@@ -53,7 +53,7 @@
     <p><a href="index.php">Homepage</a></p>
     </main>
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> PHP CRUD, Inc.</p>
+        <p>&copy; <?php echo date("Y"); ?> Football.</p>
     </footer>
 </body>
 </html>

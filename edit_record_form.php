@@ -14,14 +14,14 @@ $statement->closeCursor();
 <html>
 <!-- the head section -->
 <head>
-    <title>Edit a Record</title>
+    <title>Edit a Team</title>
     <link rel="stylesheet" type="text/css" href="./sass/main.css">
 </head>
 <!-- the body section -->
 <body>
-    <header><h1>Edit a Record</h1></header>
+    <header><h1>Edit a Team</h1></header>
     <main>
-        <h1>Edit record</h1>
+        <h1>Edit the team in the boxes below</h1>
         <form action="edit_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
             <input type="hidden" name="original_image" value="<?php echo $record['image']; ?>" />
@@ -37,11 +37,11 @@ $statement->closeCursor();
                    value="<?php echo $record['country']; ?>">
             <br>
             <label>Team:</label>
-            <input type="input" name="team"
+            <input type="team" name="team"
                    value="<?php echo $record['team']; ?>">
             <br>
             <label>Stadium:</label>
-            <input type="input" name="stadium
+            <input type="stadium" name="stadium
             value="<?php echo $record['stadium']; ?>>
             <br>
             <label>Image:</label>
