@@ -6,12 +6,9 @@ $country = filter_input(INPUT_POST, 'country');
 $team = filter_input(INPUT_POST, 'team');
 $stadium = filter_input(INPUT_POST, 'stadium');
 // Validate inputs
-if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
-$category_id == FALSE || empty($code) || empty($name) ||
-$country == NULL || $country == FALSE || 
-$team == NULL || $team == FALSE ||
-$stadium == NULL || $stadium == FALSE ||
-$image == NULL || $image == FALSE) {
+if ($record_id == NULL || $record_id == FALSE || 
+$category_id == NULL ||  $category_id == FALSE || 
+empty($country) || empty($team) || empty ($stadium)) {
 $error = "Invalid data. Check all fields and try again.";
 include('error.php');
 } else {

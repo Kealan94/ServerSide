@@ -33,16 +33,16 @@ $statement->closeCursor();
                    value="<?php echo $record['categoryID']; ?>">
                    <br>
             <label>Country:</label>
-            <input type="country" name="country"
+            <input type="input" name="country" required
                    value="<?php echo $record['country']; ?>">
             <br>
             <label>Team:</label>
-            <input type="team" name="team"
+            <input type="input" name="team"
                    value="<?php echo $record['team']; ?>">
             <br>
             <label>Stadium:</label>
-            <input type="stadium" name="stadium
-            value="<?php echo $record['stadium']; ?>>
+            <input type="input" name="stadium"
+            value="<?php echo $record['stadium']; ?>">
             <br>
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />

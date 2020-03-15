@@ -86,6 +86,8 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
+<input type="hidden" name="managers_id"
+value="<?php echo $record['managersID']; ?>">
 <input type="submit" value="Delete">
 </form></td>
 <td><form action="edit_record_form.php" method="post"
@@ -94,13 +96,16 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
+<input type="hidden" name="managers_id"
+value="<?php echo $record['managersID']; ?>">
 <input type="submit" value="Edit">
 </form></td>
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add a team</a></p>
-<p><a href="category_list.php">Edit Categories</a></p>
+<p><a href="add_record_form.php">Add a Team</a></p>
+<p><a href="category_list.php">Edit a Team</a></p>
+<p><a href="managers_list.php">Add a Manager</a></p>
 </section>
 </main>
 <footer>
