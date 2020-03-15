@@ -47,7 +47,7 @@ $statement3->closeCursor();
 <body>
  <?php './includes/header.php';?>
 <main>
-<h1>Football</h1>
+<h1>Football Teams and Managers</h1>
 <aside>
 <!-- display a list of categories in the sidebar-->
 <h2>Leagues</h2>
@@ -86,8 +86,8 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="hidden" name="managers_id"
-value="<?php echo $record['managersID']; ?>">
+<input type="hidden" name="manager_id"
+value="<?php echo $record['managerID']; ?>">
 <input type="submit" value="Delete">
 </form></td>
 <td><form action="edit_record_form.php" method="post"
@@ -96,15 +96,15 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="hidden" name="managers_id"
-value="<?php echo $record['managersID']; ?>">
+<input type="hidden" name="manager_id"
+value="<?php echo $record['managerID']; ?>">
 <input type="submit" value="Edit">
 </form></td>
 </tr>
 <?php endforeach; ?>
 </table>
 <p><a href="add_record_form.php">Add a Team</a></p>
-<p><a href="category_list.php">Edit a Team</a></p>
+<p><a href="category_list.php">Edit a Team or League</a></p>
 <p><a href="managers_list.php">Add a Manager</a></p>
 </section>
 </main>

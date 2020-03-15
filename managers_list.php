@@ -21,19 +21,23 @@
     <main>
     <h1>Managers</h1>
     <table>
+        <tr>
             <th>Name</th>
+            <th>Image</th>
             <th>&nbsp;</th>
         </tr>
         <!-- Retrieve data as an associative array and output as a foreach loop  -->
         <?php foreach ($managers as $manager) : ?>
         <tr>
             <td><?php echo $manager['managerName']; ?></td>
+            <td><img src="image_uploads/<?php echo $manager['image']; ?>" width="100px" height="100px" /></td>
             <td>
                 <form action="delete_manager.php" method="post"
                       id="delete_record_form">
                     <input type="hidden" name="manager_id"
                            value="<?php echo $manager['managerID']; ?>">
                     <input type="submit" value="Delete">
+                 
                 </form>
             </td>
         </tr>
@@ -45,7 +49,12 @@
           id="add_manager_form">
         <label>Name:</label>
         <input type="input" name="name" required>
+        <br>
+        <label>Image:</label>
+            <input type="file" name="image" accept="image/*" />
+            <br>
         <input id="add_manager_button" type="submit" value="Add">
+        <br>
     </form>
     <br>
     <p><a href="index.php">Homepage</a></p>

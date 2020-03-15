@@ -33,22 +33,6 @@ $statement->closeCursor();
             </select>
             <br>
 
-            <label>Name:</label>
-            <input type="input" name="name" required>
-            <br>
-
-            <label>Age:</label>
-            <input type="input" name="age" required>
-            <br>
-
-            <label>Club:</label>
-            <input type="input" name="club" required>
-            <br>
-
-            <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
-            <br>
-            <label>&nbsp;</label>
             <input type="submit" value="Add Record">
             <br>
         </form>
